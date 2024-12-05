@@ -1,0 +1,121 @@
+/* App.css */
+
+/* General page setup */
+body {
+  background-color: #e9ecef; /* Light gray background for contrast */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  background-color: #f8f9fa; /* White card-like background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Form input styling */
+.input-stylish {
+  height: 60px; /* Taller input box */
+  font-size: 1.2rem; /* Larger font size */
+  padding: 15px; /* Add internal padding */
+  border: 2px solid #ddd; /* Light gray border */
+  border-radius: 10px; /* Smooth rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.3s ease; /* Smooth transition for hover/focus effects */
+}
+
+/* Add hover effect */
+.input-stylish:hover {
+  border-color: #007bff; /* Change border color on hover */
+  box-shadow: 0 6px 8px rgba(0, 123, 255, 0.2); /* Enhance shadow */
+}
+
+/* Add focus effect */
+.input-stylish:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none; /* Remove default outline */
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3); /* Glow effect */
+}
+
+/* Textarea specific styling */
+.textarea-stylish {
+  height: 120px; /* Increase height for textarea */
+  resize: none; /* Prevent resizing */
+}
+
+/* Stylish button */
+.btn-primary {
+  background-color: #007bff; /* Primary color */
+  border: none; /* Remove border */
+  padding: 15px 30px; /* Larger padding */
+  font-size: 1.2rem; /* Larger text */
+  color: white; /* Text color */
+  border-radius: 30px; /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth transition */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Hover effect */
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  box-shadow: 0 6px 12px rgba(0, 86, 179, 0.3); /* Enhanced shadow */
+  transform: translateY(-3px); /* Lift effect */
+}
+
+/* Focus effect (for accessibility) */
+.btn-primary:focus {
+  outline: none; /* Remove outline */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Glow effect */
+}
+
+/* Active state */
+.btn-primary:active {
+  background-color: #004085; /* Even darker shade on click */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Reset shadow */
+  transform: translateY(2px); /* Button press effect */
+}
+
+/* Divider styling */
+hr {
+  margin: 20px 0;
+  border: none;
+  height: 3px; /* Increased thickness */
+  background-color: #000000; /* Black color for visibility */
+  border-radius: 2px; /* Adds a slight rounding to the line */
+}
+
+/* Card styling */
+.card {
+  margin: 20px 0;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+blockquote {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+footer {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
