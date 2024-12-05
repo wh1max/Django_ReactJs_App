@@ -11,7 +11,7 @@ class App extends React.Component {
 
     componentDidMount() {
         axios
-            .get("http://localhost:8000/test/")
+            .get("http://192.168.1.39:8000/test/")
             .then((res) => {
                 this.setState({
                     details: res.data,
@@ -48,7 +48,7 @@ class App extends React.Component {
     handleSubmit = (e) => {
         e.preventDefault();
         axios
-            .post("http://localhost:8000/test/", {
+            .post("http://192.168.1.39:8000/test/", {
                 name: this.state.user,
                 detail: this.state.quote,
             })
@@ -67,12 +67,12 @@ class App extends React.Component {
                 <form onSubmit={this.handleSubmit}>
                     <div className="input-group mb-4">
                         <div className="input-group-prepend">
-                            <span className="input-group-text">Author</span>
+                            
                         </div>
                         <input
                             type="text"
                             className="form-control input-stylish"
-                            placeholder="Name of the Poet/Author"
+                            placeholder="Name of the Author"
                             value={this.state.user}
                             name="user"
                             onChange={this.handleInput}
@@ -81,7 +81,7 @@ class App extends React.Component {
 
                     <div className="input-group mb-4">
                         <div className="input-group-prepend">
-                            <span className="input-group-text">Your Quote</span>
+                            <br></br>
                         </div>
                         <textarea
                             className="form-control input-stylish textarea-stylish"
@@ -91,7 +91,7 @@ class App extends React.Component {
                             onChange={this.handleInput}
                         />
                     </div>
-
+                    <br></br>
                     <button type="submit" className="btn btn-primary mb-5">
                         Submit
                     </button>
