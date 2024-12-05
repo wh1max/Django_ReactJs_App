@@ -1,1 +1,1 @@
-"Nice way to practice linking ReactJs and Django" 
+"Tell us a quote." 
